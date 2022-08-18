@@ -6,7 +6,7 @@ const uri = "mongodb+srv://axzyre:Juniorek2010@ballistic.qbs6hdo.mongodb.net/?re
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 client.connect(err => {
-  console.log(">>> Connection estabilished");
+  console.log(">>> Connection estabilished!");
 });
 
 async function check(hwid) {
