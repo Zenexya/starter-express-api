@@ -1,7 +1,10 @@
-const express = require('express')
-const app = express()
-app.all('/', (req, res) => {
-    console.log("Just got a request!")
-    res.send('Yo!')
+const express = require('mysql');
+const app = express();
+
+app.get('/', function(req, res) {
+    res.send("Currently unavailable");
 })
-app.listen(process.env.PORT || 3000)
+
+app.listen(3000, function() {
+    console.log("[*]: Server started");
+})
