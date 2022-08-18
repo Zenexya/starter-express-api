@@ -5,6 +5,4 @@ app.get('/', function(req, res) {
     res.send("Currently unavailable");
 })
 
-app.listen(3000, function() {
-    console.log("[*]: Server started");
-})
+app.listen(process.env.PORT || 3000);
